@@ -1,0 +1,3 @@
+/* Minimal CSS file to avoid 404. Tailwind CDN is used in index.html for utilities. */
+html, body, #root { height: 100%; }
+body { margin: 0; }
