@@ -277,6 +277,10 @@ export const categories: Category[] = [
 ];
 
 export const tools: Tool[] = [
+    { name: 'OverAPI', description: 'OverAPI.com is a site collecting all the cheatsheets,all!', link: 'https://overapi.com', category: 'Development', status: 'Free', tags: ['php', 'python', 'js', 'mysql', 'linux'], logo: 'https://overapi.com/static/images/overapi-logo.png' },
+    { name: 'QuickRef', description: 'Here are some cheatsheets and quick references contributed by open source angels.', link: 'https://quickref.me', category: 'Development', status: 'Free', tags: ['kotlin', 'js', 'bash', 'go'], logo: 'https://quickref.me/images/favicon.png' },
+    { name: 'TutorialKart', description: 'Free Online Courses and Learning Tutorials', link: 'https://www.tutorialkart.com', category: 'Development', status: 'Free', tags: ['c++', 'java', 'php', 'swift'], logo: 'https://www.tutorialkart.com/wp-content/uploads/2024/10/logo_512.png' },
+    { name: 'Uiverse', description: 'The Largest Library of Open-Source UI elements', link: 'https://uiverse.io', category: 'Development', status: 'Free', tags: ['Tailwind', 'React', 'Figma'], logo: 'https://avatars.githubusercontent.com/u/103369066?s=280&v=4' },
     { name: 'VS Code', description: 'A powerful, free code editor.', link: 'https://code.visualstudio.com/', category: 'Development', status: 'Free', tags: ['IDE', 'Editor'], logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png' },
     { name: 'Git', description: 'Version control system.', link: 'https://git-scm.com/', category: 'Development', status: 'Free', tags: ['VCS'], logo: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png' },
     { name: 'Canva', description: 'Easy-to-use graphic design tool.', link: 'https://www.canva.com/', category: 'Graphic Design', status: 'Freemium', tags: ['Design', 'UI'], logo: 'https://logo.clearbit.com/canva.com' },
