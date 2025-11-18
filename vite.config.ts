@@ -5,8 +5,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // Base path for GitHub Pages (serve from https://nexa1337.github.io/tool/)
-      base: '/tool/',
+      // Use a production-only base path for GitHub Pages. During local dev use '/'.
+      // This prevents dev server from serving assets under `/tool/` and causing
+      // `ERR_CONNECTION_REFUSED` / 404s when running `npm run dev`.
+      base: mode === 'production' ? '/tool/' : '/',
       server: {
         port: 3000,
         host: '0.0.0.0',

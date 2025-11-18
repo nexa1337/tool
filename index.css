@@ -1,3 +1,220 @@
-/* Minimal CSS file to avoid 404. Tailwind CDN is used in index.html for utilities. */
-html, body, #root { height: 100%; }
-body { margin: 0; }
+/* Fallback CSS when Tailwind CDN fails - provides essential styling */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f0f9ff;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+body.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 0;
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.875rem; }
+h3 { font-size: 1.5rem; }
+
+/* Layout */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+/* Buttons and Inputs */
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+input, select, textarea {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.dark input, .dark select, .dark textarea {
+  background-color: #1e293b;
+  border-color: #475569;
+  color: #e5e7eb;
+}
+
+/* Cards */
+.bg-white {
+  background-color: white;
+}
+
+.dark .bg-slate-700 {
+  background-color: #334155;
+}
+
+.border {
+  border: 1px solid #d1d5db;
+}
+
+.dark .border-slate-600 {
+  border-color: #475569;
+}
+
+/* SVG and D3 Styling */
+.node circle {
+  cursor: pointer;
+  stroke-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.node:hover circle {
+  stroke-width: 4px;
+}
+
+.node text {
+  font-size: 11px;
+  pointer-events: none;
+  fill: #374151;
+}
+
+.dark .node text {
+  fill: #d1d5db;
+}
+
+.link {
+  fill: none;
+  stroke: #9ca3af;
+  stroke-width: 1.5px;
+}
+
+.dark .link {
+  stroke: #4b5563;
+}
+
+/* Scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+.text-gray-200 {
+  color: #e5e7eb;
+}
+
+.bg-sky-50 {
+  background-color: #f0f9ff;
+}
+
+.bg-slate-900 {
+  background-color: #0f172a;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.transition-colors {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.3s;
+}
