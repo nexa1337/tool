@@ -180,6 +180,7 @@ export default function App() {
     main: generateFakeClicks(),
     portfolio: generateFakeClicks(),
     tool: generateFakeClicks(),
+    toolv2: generateFakeClicks(),
     store: generateFakeClicks()
   });
 
@@ -264,6 +265,17 @@ export default function App() {
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-xs text-zinc-500 flex items-center gap-1"><Eye className="w-3 h-3"/> {fakeClicks.tool}</span>
+                  <ExternalLink className="w-4 h-4 text-zinc-400" />
+                </div>
+              </a>
+
+              <a href="https://nexa1337.github.io/toolv2" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-700/50 transition-colors group">
+                <div className="flex items-center gap-3">
+                  <Zap className="w-5 h-5 text-zinc-400 group-hover:text-yellow-500 transition-colors" />
+                  <span className="font-medium text-sm">Tool V2</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-xs text-zinc-500 flex items-center gap-1"><Eye className="w-3 h-3"/> {fakeClicks.toolv2}</span>
                   <ExternalLink className="w-4 h-4 text-zinc-400" />
                 </div>
               </a>
