@@ -307,9 +307,19 @@ export default function App() {
               {/* @ts-ignore */}
               <FaWolfPackBattalion className="w-8 h-8 animate-glitch" />
             </div>
-            <div>
-              <h1 className="font-bold text-lg tracking-tight">N E X A 1337</h1>
-              <p className="text-[10px] text-zinc-500 font-mono uppercase tracking-widest animate-flash">TOOL</p>
+            <div className="flex flex-col items-start justify-center">
+              <div className="flex items-start">
+                <h1 className="font-bold text-sm sm:text-base tracking-tight leading-none mt-1.5">
+                  N E X A 1337
+                </h1>
+                <div className="relative -mt-1 ml-0.5">
+                  <span className="relative flex items-center justify-center bg-green-500 text-white text-[7px] sm:text-[8px] font-bold px-1.5 py-0.5 rounded-full shadow-sm border border-white dark:border-zinc-900">
+                    <span className="absolute w-full h-full rounded-full bg-green-500 animate-ping opacity-30"></span>
+                    <span className="relative z-10">Education ❤️</span>
+                  </span>
+                </div>
+              </div>
+              <p className="text-[8px] sm:text-[9px] text-zinc-500 font-mono uppercase tracking-widest animate-flash mt-1">Knowledge Is Power</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -329,25 +339,6 @@ export default function App() {
         </div>
 
         <nav className="flex-1 overflow-y-auto py-6 px-4 space-y-6 pb-24 lg:pb-6">
-          <div className="space-y-1">
-            <button
-              onClick={() => {
-                setActiveView({ type: 'about' });
-                setIsSidebarOpen(false);
-              }}
-              className={`w-full flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium transition-all duration-200 mb-4 ${
-                activeView.type === 'about'
-                  ? 'bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-sm'
-                  : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 hover:text-zinc-900 dark:hover:text-zinc-200'
-              }`}
-            >
-              <div className={`${activeView.type === 'about' ? 'text-blue-500' : ''}`}>
-                <Info className="w-5 h-5" />
-              </div>
-              About Us
-            </button>
-          </div>
-
           <div className="space-y-1">
             <button 
               onClick={() => toggleSection('roadmaps')}
@@ -488,6 +479,23 @@ export default function App() {
               </div>
             )}
           </div>
+
+          <button
+            onClick={() => {
+              setActiveView({ type: 'about', id: 'about' });
+              setIsSidebarOpen(false);
+            }}
+            className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 border ${
+              activeView.type === 'about'
+                ? 'bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 border-zinc-200 dark:border-zinc-700 shadow-sm'
+                : 'bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 hover:text-zinc-900 dark:hover:text-zinc-200'
+            }`}
+          >
+            <div className={`${activeView.type === 'about' ? 'text-blue-500' : ''}`}>
+              <Info className="w-5 h-5" />
+            </div>
+            About Us
+          </button>
           
           <div className="text-center text-[10px] text-zinc-500 dark:text-zinc-400 mt-2">
             &copy; 2026 <button onClick={() => setIsPopupOpen(true)} className="hover:text-blue-500 dark:hover:text-blue-400 font-semibold transition-colors">N E X A 1337</button>. All rights reserved.
@@ -504,9 +512,19 @@ export default function App() {
               {/* @ts-ignore */}
               <FaWolfPackBattalion className="w-6 h-6 animate-glitch" />
             </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-base tracking-tight leading-tight">N E X A 1337</span>
-              <span className="text-[8px] text-zinc-500 font-mono uppercase tracking-widest animate-flash leading-tight">TOOL</span>
+            <div className="flex flex-col justify-center">
+              <div className="flex items-start">
+                <span className="font-bold text-sm sm:text-base tracking-tight leading-none mt-1.5">
+                  N E X A 1337
+                </span>
+                <div className="relative -mt-1 ml-0.5">
+                  <span className="relative flex items-center justify-center bg-green-500 text-white text-[7px] sm:text-[8px] font-bold px-1.5 py-0.5 rounded-full shadow-sm border border-white dark:border-zinc-900">
+                    <span className="absolute w-full h-full rounded-full bg-green-500 animate-ping opacity-30"></span>
+                    <span className="relative z-10">Education ❤️</span>
+                  </span>
+                </div>
+              </div>
+              <span className="text-[8px] text-zinc-500 font-mono uppercase tracking-widest animate-flash leading-tight mt-1">Knowledge Is Power</span>
             </div>
           </div>
           <div className="flex items-center gap-2">

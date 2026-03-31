@@ -817,6 +817,23 @@ export const databaseCategories: Record<string, DatabaseCategoryData> = {
     description: 'Platforms for learning and education.',
     subcategories: [
       {
+        title: 'Free Without Certificate',
+        entries: [
+          {
+            title: 'Anthropic Academy',
+            url: 'https://anthropic.skilljar.com',
+            description: 'Learn to work alongside Claude on your real files and projects. This hands-on course covers the Cowork task loop, plugins and skills, file and research ...',
+            pricing: 'Free',
+            iconUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoQxsrnr_5qk5WWR94ALEy_4IL8J_TjI2PRA&s',
+            tags: [
+              'Cloud code',
+              'Claude 101',
+              'Building with the Claude API'
+            ]
+          }
+        ]
+      },
+      {
             "title": "Free with Certificate",
             "entries": [
                   {
